@@ -1,4 +1,4 @@
-package com.sistemacontroleestoque.sao;
+package com.sistemacontroleestoque.sao.enums;
 
 public enum StatusProduto {
 

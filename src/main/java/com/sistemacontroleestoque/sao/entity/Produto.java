@@ -1,12 +1,11 @@
-package com.sistemacontroleestoque.sao;
+package com.sistemacontroleestoque.sao.entity;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import lombok.Data;
-import lombok.Getter;
 import lombok.NoArgsConstructor;
-import lombok.Setter;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.Date;
@@ -17,28 +16,25 @@ public class Produto {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
     private Long id;
 
+    @Column(name = "descricao")
     private String descricao;
 
-    private Float valorUnitario;
+    @Column(name = "valorUnitario")
+    private Double valorUnitario;
 
+    @Column(name = "pesoUnitario")
     private Double pesoUnitario;
 
+    @Column(name = "quantidadeEstoque")
     private Integer quantidadeEstoque;
 
+    @Column(name = "status")
     private String status;
 
+    @Column(name = "dataVencimento")
     private Date dataVencimento;
 
-    @Autowired
-    public Produto(Long id, String descricao, Float valorUnitario, Double pesoUnitario, String status, Date dataVencimento) {
-        this.id = id;
-        this.descricao = descricao;
-        this.valorUnitario = valorUnitario;
-        this.pesoUnitario = pesoUnitario;
-        this.quantidadeEstoque = quantidadeEstoque;
-        this.status = status;
-        this.dataVencimento = dataVencimento;
-    }
 }
