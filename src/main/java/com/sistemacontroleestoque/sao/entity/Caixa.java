@@ -14,7 +14,7 @@ public class Caixa {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "idCaixa")
+    @Column(name = "id_Caixa")
     private Integer idCaixa;
 
     @Column(name = "login")

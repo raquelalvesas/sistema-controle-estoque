@@ -14,10 +14,10 @@ public class Funcionario extends Pessoa {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "idFuncionario")
+    @Column(name = "id_Ffuncionario")
     private Long idFuncionario;
 
-    @Column(name = "descricaiCargo")
+    @Column(name = "descricao_cargo")
     private String descricaiCargo;
 
     @Column(name = "login")

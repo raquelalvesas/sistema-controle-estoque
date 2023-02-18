@@ -22,19 +22,19 @@ public class Produto {
     @Column(name = "descricao")
     private String descricao;
 
-    @Column(name = "valorUnitario")
+    @Column(name = "valor_unitario")
     private Double valorUnitario;
 
-    @Column(name = "pesoUnitario")
+    @Column(name = "peso_unitario")
     private Double pesoUnitario;
 
-    @Column(name = "quantidadeEstoque")
+    @Column(name = "quantidade_estoque")
     private Integer quantidadeEstoque;
 
     @Column(name = "status")
     private String status;
 
-    @Column(name = "dataVencimento")
+    @Column(name = "data_vencimento")
     private Date dataVencimento;
 
 }

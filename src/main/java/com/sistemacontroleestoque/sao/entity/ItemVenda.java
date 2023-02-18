@@ -10,12 +10,12 @@ public class ItemVenda {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "idItemVenda")
+    @Column(name = "id_item_venda")
     private Long idItemVenda;
 
-    @Column(name = "quantidadeProduto")
+    @Column(name = "quantidade_produto")
     private Integer quantidadeProduto;
 
-    @Column(name = "precoItem")
+    @Column(name = "preco_item")
     private Float precoItem;
 }

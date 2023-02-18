@@ -16,16 +16,16 @@ import java.util.Date;
 public class TransacaoProduto {
 
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "quantidadeProduto")
+    @Column(name = "quantidade_produto")
     private Integer quantidadeProduto;
 
-    @Column(name = "precoVenda")
+    @Column(name = "preco_venda")
     private Double precoVenda;
 
-    @Column(name = "dataHoraVenda")
-    private Date dataHoraVenda;
+    @Column(name = "data_venda")
+    private Date dataVenda;
 
-    @Column(name = "funcionarioLiberacaoVenda")
+    @Column(name = "funcionario_liberacao_venda")
     private Integer funcionarioLiberacaoVenda;
 
     @Column(name = "cliente")

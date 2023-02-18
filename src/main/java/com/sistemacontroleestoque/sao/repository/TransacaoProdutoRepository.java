@@ -11,7 +11,7 @@ public interface TransacaoProdutoRepository extends JpaRepository<TransacaoProdu
 
     List<TransacaoProduto> findTransacaoProdutoByPrecoVenda(Double precoVenda);
 
-    List<TransacaoProduto> findTransacaoProdutoByDataHoraVenda(Double dataHoraVenda);
+    List<TransacaoProduto> findTransacaoProdutoByDataHoraVenda(Double dataVenda);
 
     List<TransacaoProduto> findTransacaoProdutoByFuncionarioLiberacaoVenda(Integer funcionarioLiberacaoVenda);
 

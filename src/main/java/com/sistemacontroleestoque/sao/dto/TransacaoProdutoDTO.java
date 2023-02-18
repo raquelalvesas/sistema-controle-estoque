@@ -16,7 +16,7 @@ public class TransacaoProdutoDTO {
 
     private Double precoVenda;
 
-    private Date dataHoraVenda;
+    private Date dataVenda = new Date();
 
     private Integer funcionarioLiberacaoVenda;
 
