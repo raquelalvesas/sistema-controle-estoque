@@ -1,14 +1,15 @@
 package com.sistemacontroleestoque.sao.entity;
 
 import jakarta.persistence.*;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.Date;
 
+@Builder
 @Entity
 @NoArgsConstructor
+@AllArgsConstructor(access = AccessLevel.PRIVATE)
 @Data
 public class Produto {
 
