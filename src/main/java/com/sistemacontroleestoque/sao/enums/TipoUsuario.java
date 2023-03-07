@@ -13,12 +13,6 @@ public enum TipoUsuario {
     FUNCIONARIO("funcionario"),
     ;
 
-    //private String selectTipoFuncionario;
-
-    //TipoUsuario(String status) {
-       // this.selectTipoFuncionario = status;
-    //}
-
     private final String value;
     @JsonCreator
     public static TipoUsuario fromValue(String text) {
