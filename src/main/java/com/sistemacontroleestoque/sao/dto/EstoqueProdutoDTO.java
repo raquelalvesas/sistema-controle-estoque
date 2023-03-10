@@ -9,11 +9,11 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class EstoqueDTO {
+public class EstoqueProdutoDTO {
 
     private Integer idEstoque;
 
     private String descricaoProduto;
-    
+
     private String quantidade;
 }

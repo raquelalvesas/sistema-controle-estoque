@@ -7,18 +7,13 @@ import lombok.NoArgsConstructor;
 @Entity
 @NoArgsConstructor
 @Data
-public class Estoque {
+public class CategoriaProduto {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id")
-    private Integer idEstoque;
-
-    @Column(name = "descricao_produto")
-    private String produto;
-
-    @Column(name = "quantidade")
-    private String quantidade;
-
-
+    private Integer id;
+    @Column(columnDefinition = "TEXT", nullable = false)
+    private String descricao;
+    @Column(nullable = false)
+    private Boolean status;
 }
